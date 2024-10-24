@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-10-23T20:48:55.735218" rpa="false" schemaversion="5">
+<suite id="s1" name="Signup" source="F:\automação\Robot\QAx\projects\walkdog-robot\tests\signup.robot">
+<test id="s1-t1" name="Deve poder cadastrar um novo dog walker" line="7">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-10-23T20:48:55.937788" level="INFO">${dog_walker} = {'Completedname': 'Jorge Matias', 'email': 'jorge@hotmail.com', 'cpf': '00000014141', 'cep': '04534011', 'number': '1000', 'complement': 'ap 28', 'cnh': 'toretto.jpg'}</msg>
+<var>${dog_walker}</var>
+<arg>Completedname=Jorge Matias</arg>
+<arg>email=jorge@hotmail.com</arg>
+<arg>cpf=00000014141</arg>
+<arg>cep=04534011</arg>
+<arg>number=1000</arg>
+<arg>complement=ap 28</arg>
+<arg>cnh=toretto.jpg</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-10-23T20:48:55.937459" elapsed="0.000368"/>
+</kw>
+<kw name="Click here to register" owner="signup">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-23T20:48:55.938598" level="INFO">${resistre} = xpath=//strong[text()="Quero ser Dog Walker"]</msg>
+<var>${resistre}</var>
+<arg>xpath=//strong[text()="Quero ser Dog Walker"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-23T20:48:55.938446" elapsed="0.000182"/>
+</kw>
+<return>
+<value>${resistre}</value>
+<status status="PASS" start="2024-10-23T20:48:55.938700" elapsed="0.000051"/>
+</return>
+<msg time="2024-10-23T20:48:55.938884" level="INFO">${resistre} = xpath=//strong[text()="Quero ser Dog Walker"]</msg>
+<var>${resistre}</var>
+<status status="PASS" start="2024-10-23T20:48:55.938171" elapsed="0.000738"/>
+</kw>
+<kw name="Box name" owner="signup">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-23T20:48:55.939511" level="INFO">${boxName} = xpath=//input[@placeholder="Nome completo"]</msg>
+<var>${boxName}</var>
+<arg>xpath=//input[@placeholder="Nome completo"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-23T20:48:55.939383" elapsed="0.000158"/>
+</kw>
+<return>
+<value>${boxName}</value>
+<status status="PASS" start="2024-10-23T20:48:55.939602" elapsed="0.000045"/>
+</return>
+<msg time="2024-10-23T20:48:55.939769" level="INFO">${boxName} = xpath=//input[@placeholder="Nome completo"]</msg>
+<var>${boxName}</var>
+<status status="PASS" start="2024-10-23T20:48:55.939158" elapsed="0.000635"/>
+</kw>
+<kw name="Box email" owner="signup">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-23T20:48:55.940365" level="INFO">${BoxEmail} = xpath=//input[@name="email"]</msg>
+<var>${BoxEmail}</var>
+<arg>xpath=//input[@name="email"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-23T20:48:55.940242" elapsed="0.000148"/>
+</kw>
+<return>
+<value>${BoxEmail}</value>
+<status status="PASS" start="2024-10-23T20:48:55.940447" elapsed="0.000035"/>
+</return>
+<msg time="2024-10-23T20:48:55.940595" level="INFO">${boxEmail} = xpath=//input[@name="email"]</msg>
+<var>${boxEmail}</var>
+<status status="PASS" start="2024-10-23T20:48:55.940047" elapsed="0.000571"/>
+</kw>
+<kw name="Box CPF" owner="signup">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-23T20:48:55.941484" level="INFO">${boxCpf} = xpath=//input[@name="cpf"]</msg>
+<var>${boxCpf}</var>
+<arg>xpath=//input[@name="cpf"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-23T20:48:55.941277" elapsed="0.000293"/>
+</kw>
+<return>
+<value>${boxCpf}</value>
+<status status="PASS" start="2024-10-23T20:48:55.941660" elapsed="0.000046"/>
+</return>
+<msg time="2024-10-23T20:48:55.941841" level="INFO">${boxCpf} = xpath=//input[@name="cpf"]</msg>
+<var>${boxCpf}</var>
+<status status="PASS" start="2024-10-23T20:48:55.940886" elapsed="0.000981"/>
+</kw>
+<kw name="Box CEP" owner="signup">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-23T20:48:55.942452" level="INFO">${boxCep} = xpath=//input[@name="cep"]</msg>
+<var>${boxCep}</var>
+<arg>xpath=//input[@name="cep"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-23T20:48:55.942325" elapsed="0.000152"/>
+</kw>
+<return>
+<value>${boxCep}</value>
+<status status="PASS" start="2024-10-23T20:48:55.942535" elapsed="0.000035"/>
+</return>
+<msg time="2024-10-23T20:48:55.942689" level="INFO">${boxCep} = xpath=//input[@name="cep"]</msg>
+<var>${boxCep}</var>
+<status status="PASS" start="2024-10-23T20:48:55.942118" elapsed="0.000594"/>
+</kw>
+<kw name="Box adressnumber" owner="signup">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-23T20:48:55.943228" level="INFO">${adressNumber} = xpath=//input[@name="addressNumber"]</msg>
+<var>${adressNumber}</var>
+<arg>xpath=//input[@name="addressNumber"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-23T20:48:55.943109" elapsed="0.000144"/>
+</kw>
+<return>
+<value>${adressNumber}</value>
+<status status="PASS" start="2024-10-23T20:48:55.943315" elapsed="0.000034"/>
+</return>
+<msg time="2024-10-23T20:48:55.943459" level="INFO">${adressNumber} = xpath=//input[@name="addressNumber"]</msg>
+<var>${adressNumber}</var>
+<status status="PASS" start="2024-10-23T20:48:55.942918" elapsed="0.000564"/>
+</kw>
+<kw name="Box adresscomplemnet" owner="signup">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-23T20:48:55.944023" level="INFO">${adressComplemnet} = xpath=//input[@name="addressDetails"]</msg>
+<var>${adressComplemnet}</var>
+<arg>xpath=//input[@name="addressDetails"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-23T20:48:55.943899" elapsed="0.000149"/>
+</kw>
+<return>
+<value>${adressComplemnet}</value>
+<status status="PASS" start="2024-10-23T20:48:55.944108" elapsed="0.000036"/>
+</return>
+<msg time="2024-10-23T20:48:55.944257" level="INFO">${adressComplemnet} = xpath=//input[@name="addressDetails"]</msg>
+<var>${adressComplemnet}</var>
+<status status="PASS" start="2024-10-23T20:48:55.943698" elapsed="0.000582"/>
+</kw>
+<kw name="Search CEP" owner="signup">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-23T20:48:55.944777" level="INFO">${buttonCep} = xpath=//input[@value="Buscar CEP"]</msg>
+<var>${buttonCep}</var>
+<arg>xpath=//input[@value="Buscar CEP"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-23T20:48:55.944663" elapsed="0.000138"/>
+</kw>
+<return>
+<value>${buttonCep}</value>
+<status status="PASS" start="2024-10-23T20:48:55.944855" elapsed="0.000034"/>
+</return>
+<msg time="2024-10-23T20:48:55.944997" level="INFO">${buttonCep} = xpath=//input[@value="Buscar CEP"]</msg>
+<var>${buttonCep}</var>
+<status status="PASS" start="2024-10-23T20:48:55.944478" elapsed="0.000542"/>
+</kw>
+<kw name="Attach file" owner="signup">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-23T20:48:55.945611" level="INFO">${attachFile} = xpath=//input[@type="file"]</msg>
+<var>${attachFile}</var>
+<arg>xpath=//input[@type="file"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-23T20:48:55.945495" elapsed="0.000144"/>
+</kw>
+<return>
+<value>${attachFile}</value>
+<status status="PASS" start="2024-10-23T20:48:55.945692" elapsed="0.000033"/>
+</return>
+<msg time="2024-10-23T20:48:55.945836" level="INFO">${attachFile} = xpath=//input[@type="file"]</msg>
+<var>${attachFile}</var>
+<status status="PASS" start="2024-10-23T20:48:55.945319" elapsed="0.000542"/>
+</kw>
+<kw name="Subimit registre" owner="signup">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-23T20:48:55.946349" level="INFO">${buttonSubmit} = xpath=//button[@type="submit"]</msg>
+<var>${buttonSubmit}</var>
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-23T20:48:55.946229" elapsed="0.000222"/>
+</kw>
+<return>
+<value>${buttonSubmit}</value>
+<status status="PASS" start="2024-10-23T20:48:55.946513" elapsed="0.000034"/>
+</return>
+<msg time="2024-10-23T20:48:55.946659" level="INFO">${buttonSubmit} = xpath=//button[@type="submit"]</msg>
+<var>${buttonSubmit}</var>
+<status status="PASS" start="2024-10-23T20:48:55.946056" elapsed="0.000631"/>
+</kw>
+<kw name="Title sucess" owner="signup">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-23T20:48:55.947244" level="INFO">${titleSucess} = xpath=//div[@class="swal2-html-container"]</msg>
+<var>${titleSucess}</var>
+<arg>xpath=//div[@class="swal2-html-container"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-23T20:48:55.947083" elapsed="0.000187"/>
+</kw>
+<return>
+<value>${titleSucess}</value>
+<status status="PASS" start="2024-10-23T20:48:55.947529" elapsed="0.000054"/>
+</return>
+<msg time="2024-10-23T20:48:55.947980" level="INFO">${titleSucess} = xpath=//div[@class="swal2-html-container"]</msg>
+<var>${titleSucess}</var>
+<status status="PASS" start="2024-10-23T20:48:55.946887" elapsed="0.001138"/>
+</kw>
+<kw name="Go To signup page" owner="signup">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-10-23T20:48:55.949581" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "F:\\automa\u00e7\u00e3o\\Robot\\QAx\\projects\\walkdog-robot\\tests\\logs\\browser\\traces\\c61e0ca5-c051-4e29-a70a-9df871ac97be"}</msg>
+<msg time="2024-10-23T20:48:55.975128" level="INFO">Starting Browser process C:\Python313\Lib\site-packages\Browser\wrapper\index.js using port 64894</msg>
+<msg time="2024-10-23T20:48:55.975222" level="INFO">Node startup parameters: ['node', 'C:\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '64894']</msg>
+<msg time="2024-10-23T20:48:56.799181" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"F:\\automação\\Robot\\QAx\\projects\\walkdog-robot\\tests\\logs\\browser\\traces\\c61e0ca5-c051-4e29-a70a-9df871ac97be"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-10-23T20:48:55.948795" elapsed="0.850593"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-10-23T20:48:57.560057" level="INFO">Successfully initialized new page object and opened url: https://walkdog.vercel.app</msg>
+<msg time="2024-10-23T20:48:57.560125" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://walkdog.vercel.app</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-10-23T20:48:56.799606" elapsed="0.760665"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-23T20:48:57.561163" level="INFO">Clicks the element 'xpath=//strong[text()="Quero ser Dog Walker"]'.</msg>
+<arg>${resistre}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-23T20:48:57.560446" elapsed="0.182773"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-10-23T20:48:57.780328" level="INFO">Text: 'Faça seu cadastro'</msg>
+<arg>h1</arg>
+<arg>equal</arg>
+<arg>Faça seu cadastro</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-23T20:48:57.743403" elapsed="0.037039"/>
+</kw>
+<arg>${resistre}</arg>
+<status status="PASS" start="2024-10-23T20:48:55.948392" elapsed="1.832172"/>
+</kw>
+<kw name="Fill signup form" owner="signup">
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-10-23T20:48:57.789175" level="INFO">Fills the text 'Jorge Matias' in the given field.</msg>
+<arg>${boxName}</arg>
+<arg>${dog_walker}[Completedname]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-23T20:48:57.788617" elapsed="0.022724"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-10-23T20:48:57.812019" level="INFO">Fills the text 'jorge@hotmail.com' in the given field.</msg>
+<arg>${boxEmail}</arg>
+<arg>${dog_walker}[email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-23T20:48:57.811543" elapsed="0.018852"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-10-23T20:48:57.832110" level="INFO">Fills the text '00000014141' in the given field.</msg>
+<arg>${boxCpf}</arg>
+<arg>${dog_walker}[cpf]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-23T20:48:57.830577" elapsed="0.016695"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-10-23T20:48:57.848795" level="INFO">Fills the text '04534011' in the given field.</msg>
+<arg>${boxCep}</arg>
+<arg>${dog_walker}[cep]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-23T20:48:57.848089" elapsed="0.015293"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-23T20:48:57.864001" level="INFO">Clicks the element 'xpath=//input[@value="Buscar CEP"]'.</msg>
+<arg>${buttonCep}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-23T20:48:57.863580" elapsed="0.054227"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-10-23T20:48:57.918822" level="INFO">Fills the text '1000' in the given field.</msg>
+<arg>${adressNumber}</arg>
+<arg>${dog_walker}[number]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-23T20:48:57.918012" elapsed="0.015927"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-10-23T20:48:57.934815" level="INFO">Fills the text 'ap 28' in the given field.</msg>
+<arg>${adressComplemnet}</arg>
+<arg>${dog_walker}[complement]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-23T20:48:57.934204" elapsed="0.016191"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-23T20:48:59.951426" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-23T20:48:57.950580" elapsed="2.001173"/>
+</kw>
+<kw name="Upload File By Selector" owner="Browser">
+<msg time="2024-10-23T20:48:59.957017" level="FAIL">ValueError: Nonexistent input file path 'F:\automação\Robot\QAx\projects\walkdog-robot\tests\resources\fixtures\toretto.jpg'</msg>
+<arg>${attachFile}</arg>
+<arg>${EXECDIR}../resources/fixtures/${dog_walker}[cnh]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Uploads file from `path` to file input element matched by selector.</doc>
+<status status="FAIL" start="2024-10-23T20:48:59.952353" elapsed="0.013070">ValueError: Nonexistent input file path 'F:\automação\Robot\QAx\projects\walkdog-robot\tests\resources\fixtures\toretto.jpg'</status>
+</kw>
+<arg>${boxName}</arg>
+<arg>${boxEmail}</arg>
+<arg>${boxCpf}</arg>
+<arg>${boxCep}</arg>
+<arg>${buttonCep}</arg>
+<arg>${adressNumber}</arg>
+<arg>${adressComplemnet}</arg>
+<arg>${dog_walker}</arg>
+<arg>${attachFile}</arg>
+<status status="FAIL" start="2024-10-23T20:48:57.787887" elapsed="2.178251">ValueError: Nonexistent input file path 'F:\automação\Robot\QAx\projects\walkdog-robot\tests\resources\fixtures\toretto.jpg'</status>
+</kw>
+<kw name="Submit signup form" owner="signup">
+<arg>${buttonSubmit}</arg>
+<arg>${titleSucess}</arg>
+<status status="NOT RUN" start="2024-10-23T20:48:59.967024" elapsed="0.000137"/>
+</kw>
+<status status="FAIL" start="2024-10-23T20:48:55.936567" elapsed="4.031330">ValueError: Nonexistent input file path 'F:\automação\Robot\QAx\projects\walkdog-robot\tests\resources\fixtures\toretto.jpg'</status>
+</test>
+<doc>Suite de testes de cadastro de dog walker</doc>
+<status status="FAIL" start="2024-10-23T20:48:55.736576" elapsed="4.329384"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Signup">Signup</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
